@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="profile-menu">
+                        <img src="student-photo.jpg" alt="Student Photo" class="profile-photo" id="profilePhoto">
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="#">Settings</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="cards">
+                <div class="card">
+                    <h3>python </h3>
+                    <button href="python.html" class="btn">Take Quiz</button>
+                    
+                </div>
+                   
+                    
+             
+                <div class="card">
+                    <h3>java</h3>
+                    <button href="java.html" class="btn">Take Quiz</button>
+                    
+                </div>
+                <div class="card">
+                    <h3>c</h3>
+                    <button href="c.html" class="btn">Take Quiz</button>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script>
+        document.getElementById('profilePhoto').addEventListener('click', function() {
+            var menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

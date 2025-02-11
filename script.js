@@ -1,20 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const loginForm = document.getElementById("loginForm");
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-    const errorMessage = document.getElementById("error-message");
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    
+    
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form from submitting immediately
-
-        if (username.value.trim() === "" || password.value.trim() === "") {
-            errorMessage.textContent = "Username and password cannot be empty!";
-        } else {
-            errorMessage.textContent = ""; 
-            alert("Login successful!");
-            loginForm.submit();
-        }
-    });
+    if (username === "username" && password === "password") { 
+        window.location.href = "dashboard.html"; 
+    } else {
+        document.getElementById("error-message").textContent = "Invalid username or password!";
+        document.getElementById("error-message").style.color = "red";
+    }
 });
 
 
