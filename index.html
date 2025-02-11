@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"> </a>"
+            <div class="nav-links" id="nav-links">
+                <i class="fa-regular fa-bars" onclick="hidemenu()"></i>
+                
+                <ul>
+                    <li><a href="login.html"> Login</a> </li>
+                    <li><a href="signup.html"> Signup</a> </li>
+                    <li><a href="About us.html"> About us</a> </li>
+                    <li><a href=""> CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()" ></i>
+        </nav>
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+              <source src="your-video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay-content">
+              <h1>India's EduTech Company</h1>
+              <p>We train everyone to get relevant skills...</p>
+            </div>
+          </div>
+          
+
+    <div class="text-box">
+    <h1>India's  EduTech Company</h1>
+    <p> We train everyone to get relevant skills to currrent job market<br> And also we will show paths based on intersts</p>
+    <a href="" class="hero-btn"> Visit us to know more</a>
+    </div>
+
+ 
+
+    </section>
+    <section class="course">
+        <h1> Courses we offer</h1>
+        <p> we offer courses based on relevant texhnology that are booming in </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>java</h3>
+                <p>  here we help the students t become pro in coding skills</p>
+            </div>
+            <div class="course-col">
+                <h3>python</h3>
+                <p>  here we help the students t become pro in coding skills</p>
+            </div>
+            <div class="course-col">
+                <h3>post </h3>
+                <p>  here we help the students t become pro in coding skills</p>
+            </div>
+        </div>
+    </section>
+   <section class="cta">
+    <h1> Enroll for our various Online courses<br> Anyehere From the World</h1>
+    <a href="" > CONTACT US</a>
+   </section>
+
+    <script>
+
+        var navLinks = document.getElementById("nav-links");
+        
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

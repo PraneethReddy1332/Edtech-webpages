@@ -1,0 +1,234 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.body-forget {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+
+fieldset {
+    border: none;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type="password"]:focus {
+    border: 2px solid #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.8);
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #ff4b5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background: #e43f4b;
+    box-shadow: 0 0 10px rgba(255, 75, 92, 0.8);
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/* About us */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #001F3F, #003366);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px 20px;
+    margin: 50px auto;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #dcdcdc;
+}
+
+/* Sections */
+section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Mission Section */
+.mission h2, .what-we-offer h2, .why-choose-us h2 {
+    color: #FFD700;
+    font-size: 2.4rem;
+    text-shadow: 0 0 10px #FFD700;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+/* What We Offer */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    width: 45%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Why Choose Us */
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.why-choose-us li:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
